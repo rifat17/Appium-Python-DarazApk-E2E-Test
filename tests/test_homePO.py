@@ -13,7 +13,7 @@ class Signup(BaseTestCase):
     def setUp(self) -> None:
         super().setUp()
 
-    def Xtest_Signup_TC_002(self):
+    def test_Signup_TC_002(self):
         home = HomePO(self.driver_instance, waittime=self.wait_time)
         home.click_my_account_btn()
         time.sleep(self.wait_time)
@@ -32,7 +32,7 @@ class Signup(BaseTestCase):
         self.assertIsNotNone(error_text)
         self.assertEqual(error_text, "Mandatory Field.")
 
-    def Xtest_Signup_TC_003(self):
+    def test_Signup_TC_003(self):
         home = HomePO(self.driver_instance, waittime=self.wait_time)
         home.click_my_account_btn()
         time.sleep(self.wait_time)
